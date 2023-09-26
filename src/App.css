@@ -1,38 +1,1513 @@
-.App {
+body {
+  font-family: "Shadows Into Light", cursive;
   text-align: center;
+  background-color: LightCyan;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* =============== Container =============== */
+.container-CSS {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 75px 0px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.title-CSS {
+  font-size: 50px;
+  color: Black;
+  text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.result-CSS {
+  font-size: 30px;
+  color: Black;
+  text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+  margin: 0px;
+}
+
+.new-reset-CSS {
+  display: flex;
+  justify-content: center;
+}
+
+.new-CSS,
+.reset-CSS {
+  font-size: 25px;
+  font-weight: bold;
+  color: MidnightBlue;
+  background-color: LightCyan;
+  border: 5px solid MidnightBlue;
+  text-shadow: 3px 3px 5px DarkBlue;
+  padding: 5px;
+  margin: 0px 100px;
+}
+
+.new-CSS:hover,
+.reset-CSS:hover {
+  cursor: pointer;
+  color: RoyalBlue;
+  border: 5px solid RoyalBlue;
+  text-shadow: 5px 5px 5px RoyalBlue;
+}
+
+
+/* =============== Section 1 =============== */
+.section1-CSS {
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.player-info-CSS {
+  color: Black;
+  text-shadow: 0 0 5px DarkBlue;
+}
+
+.input-name-CSS,
+.start-button-CSS {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  width: auto;
+  color: Black;
+  background-color: LightCyan;
+  border: 5px solid MidnightBlue;
+  text-shadow: 0 0 5px DarkBlue;
+  padding: 5px;
+  margin: auto;
+}
+
+.input-name-CSS {
+  border-right: none;
+}
+
+.input-name-CSS::placeholder {
+  color: Black;
+  text-shadow: 0 0 5px DarkBlue;
+}
+
+.start-button-CSS:hover { 
+  cursor: pointer;
+  color: LightCyan;
+  background-color: MidnightBlue;
+}
+
+
+/* =============== Section 2 =============== */
+.section2-CSS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 30px;
+}
+
+.grid-CSS {
+  font-size: 75px;
+  display: grid;
+  line-height: 0%;
+  grid-template-columns: auto auto auto;
+  cursor: pointer;
+}
+
+.grid-box-CSS {
+  justify-content: center;
+}
+
+#box-1-1,
+#box-1-2,
+#box-1-3 {
+  width: 170px;
+  height: 100px;
+  display: grid;
+  color: Black;
+  text-shadow: 0 0 5px DarkBlue;
+  border-style: solid;
+  border-width: 10px;
+  border-color: MidnightBlue;
+  padding: 55px;
+  margin: auto;
+}
+
+#box-2-1,
+#box-2-2,
+#box-2-3 {
+  width: 170px;
+  height: 100px;
+  display: grid;
+  color: Black;
+  text-shadow: 0 0 5px DarkBlue;
+  border-style: solid;
+  border-width: 10px;
+  border-color: MidnightBlue;
+  padding: 55px;
+  margin: auto;
+}
+
+#box-3-1,
+#box-3-2,
+#box-3-3 {
+  width: 170px;
+  height: 100px;
+  display: grid;
+  color: Black;
+  text-shadow: 0 0 5px DarkBlue;
+  border-style: solid;
+  border-width: 10px;
+  border-color: MidnightBlue;
+  padding: 55px;
+  margin: auto;
+}
+
+#box-1-1,
+#box-1-2,
+#box-1-3,
+#box-2-1,
+#box-2-2,
+#box-2-3 {
+  border-right: none;
+}
+
+#box-1-1,
+#box-2-1,
+#box-3-1,
+#box-1-2,
+#box-2-2,
+#box-3-2 {
+  border-bottom: none;
+}
+
+
+/* =============== Section 3 =============== */
+.section3-CSS {
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.p-copyright-CSS {
+  font-size: 20px;
+  color: Black;
+  text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+}
+
+
+
+/* =============== Media Queries =============== */
+
+/* =============== Mobile View =============== */
+@media only screen and (250px <= width <= 425px) {
+  /* Container */
+  .container-CSS {
+    justify-content: center;
+    margin: 50px 0px 0px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title-CSS {
+    font-size: 40px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+  }
+
+  .result-CSS {
+    font-size: 25px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+    margin: 0px;
+  }
+
+  .new-reset-CSS {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-CSS,
+  .reset-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    color: MidnightBlue;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 3px 3px 5px DarkBlue;
+    padding: 5px;
+    margin: 0px 25px;
+  }
+
+  /* Section 1 */
+  .section1-CSS {
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+  .player-info-CSS {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  .input-name-CSS,
+  .start-button-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 85%;
+    color: Black;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 0 0 5px DarkBlue;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .input-name-CSS {
+    border-bottom: none;
+  }
+
+  .input-name-CSS::placeholder {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  /* Section 2 */
+  .section2-CSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 20px;
+  }
+
+  .grid-CSS {
+    font-size: 35px;
+    display: grid;
+    line-height: 0%;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .grid-box-CSS {
+    justify-content: center;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3 {
+    width: 75px;
+    height: 75px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 40px;
+    margin: auto;
+  }
+
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    width: 75px;
+    height: 75px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 40px;
+    margin: auto;
+  }
+
+  #box-3-1,
+  #box-3-2,
+  #box-3-3 {
+    width: 75px;
+    height: 75px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 40px;
+    margin: auto;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3,
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    border-right: none;
+  }
+
+  #box-1-1,
+  #box-2-1,
+  #box-3-1,
+  #box-1-2,
+  #box-2-2,
+  #box-3-2 {
+    border-bottom: none;
+  }
+
+  /* Section 3 */
+  .section3-CSS {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px;
+  }
+}
+
+
+
+@media only screen and (426px <= width <= 499px) {
+  /* Container */
+  .container-CSS {
+    justify-content: center;
+    margin: 50px 0px 0px;
+  }
+
+  .title-CSS {
+    font-size: 40px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+  }
+
+  .result-CSS {
+    font-size: 25px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+    margin: 0px;
+  }
+
+  .new-reset-CSS {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-CSS,
+  .reset-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    color: MidnightBlue;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 3px 3px 5px DarkBlue;
+    padding: 5px;
+    margin: 0px 25px;
+  }
+
+  /* Section 1 */
+  .section1-CSS {
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+  .player-info-CSS {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  .input-name-CSS,
+  .start-button-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    color: Black;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 0 0 5px DarkBlue;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .input-name-CSS {
+    border-right: none;
+  }
+
+  .input-name-CSS::placeholder {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  /* Section 2 */
+  .section2-CSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 20px;
+  }
+
+  .grid-CSS {
+    font-size: 35px;
+    display: grid;
+    line-height: 0%;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .grid-box-CSS {
+    justify-content: center;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3 {
+    width: 125px;
+    height: 75px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 40px;
+    margin: auto;
+  }
+
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    width: 125px;
+    height: 75px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 40px;
+    margin: auto;
+  }
+
+  #box-3-1,
+  #box-3-2,
+  #box-3-3 {
+    width: 125px;
+    height: 75px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 40px;
+    margin: auto;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3,
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    border-right: none;
+  }
+
+  #box-1-1,
+  #box-2-1,
+  #box-3-1,
+  #box-1-2,
+  #box-2-2,
+  #box-3-2 {
+    border-bottom: none;
+  }
+
+  /* Section 3 */
+  .section3-CSS {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px;
+  }
+}
+
+
+
+@media only screen and (500px <= width <= 550px) {
+  /* Container */
+  .container-CSS {
+    justify-content: center;
+    margin: 50px 0px 0px;
+  }
+
+  .title-CSS {
+    font-size: 40px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+  }
+
+  .result-CSS {
+    font-size: 25px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+    margin: 0px;
+  }
+
+  .new-reset-CSS {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-CSS,
+  .reset-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    color: MidnightBlue;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 3px 3px 5px DarkBlue;
+    padding: 5px;
+    margin: 0px 25px;
+  }
+
+  /* Section 1 */
+  .section1-CSS {
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+  .player-info-CSS {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  .input-name-CSS,
+  .start-button-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    color: Black;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 0 0 5px DarkBlue;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .input-name-CSS {
+    border-right: none;
+  }
+
+  .input-name-CSS::placeholder {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  /* Section 2 */
+  .section2-CSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 20px;
+  }
+
+  .grid-CSS {
+    font-size: 35px;
+    display: grid;
+    line-height: 0%;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .grid-box-CSS {
+    justify-content: center;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3 {
+    width: 150px;
+    height: 75px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 40px;
+    margin: auto;
+  }
+
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    width: 150px;
+    height: 75px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 40px;
+    margin: auto;
+  }
+
+  #box-3-1,
+  #box-3-2,
+  #box-3-3 {
+    width: 150px;
+    height: 75px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 40px;
+    margin: auto;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3,
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    border-right: none;
+  }
+
+  #box-1-1,
+  #box-2-1,
+  #box-3-1,
+  #box-1-2,
+  #box-2-2,
+  #box-3-2 {
+    border-bottom: none;
+  }
+
+  /* Section 3 */
+  .section3-CSS {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px;
+  }
+}
+
+
+
+@media only screen and (600px <= width <= 650px) {
+  /* Container */
+  .container-CSS {
+    justify-content: center;
+    margin: 50px 0px 0px;
+  }
+
+  .title-CSS {
+    font-size: 40px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+  }
+
+  .result-CSS {
+    font-size: 25px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+    margin: 0px;
+  }
+
+  .new-reset-CSS {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-CSS,
+  .reset-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    color: MidnightBlue;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 3px 3px 5px DarkBlue;
+    padding: 5px;
+    margin: 0px 25px;
+  }
+
+  /* Section 1 */
+  .section1-CSS {
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+  .player-info-CSS {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  .input-name-CSS,
+  .start-button-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    color: Black;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 0 0 5px DarkBlue;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .input-name-CSS {
+    border-right: none;
+  }
+
+  .input-name-CSS::placeholder {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  /* Section 2 */
+  .section2-CSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 20px;
+  }
+
+  .grid-CSS {
+    font-size: 35px;
+    display: grid;
+    line-height: 0%;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .grid-box-CSS {
+    justify-content: center;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3 {
+    width: 150px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 45px;
+    margin: auto;
+  }
+
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    width: 150px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 45px;
+    margin: auto;
+  }
+
+  #box-3-1,
+  #box-3-2,
+  #box-3-3 {
+    width: 150px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 45px;
+    margin: auto;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3,
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    border-right: none;
+  }
+
+  #box-1-1,
+  #box-2-1,
+  #box-3-1,
+  #box-1-2,
+  #box-2-2,
+  #box-3-2 {
+    border-bottom: none;
+  }
+
+  /* Section 3 */
+  .section3-CSS {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px;
+  }
+}
+
+
+
+@media only screen and (710px <= width <= 767px) {
+  /* Container */
+  .container-CSS {
+    justify-content: center;
+    margin: 50px 0px 0px;
+  }
+
+  .title-CSS {
+    font-size: 40px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+  }
+
+  .result-CSS {
+    font-size: 25px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+    margin: 0px;
+  }
+
+  .new-reset-CSS {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-CSS,
+  .reset-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    color: MidnightBlue;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 3px 3px 5px DarkBlue;
+    padding: 5px;
+    margin: 0px 25px;
+  }
+
+  /* Section 1 */
+  .section1-CSS {
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+  .player-info-CSS {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  .input-name-CSS,
+  .start-button-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    color: Black;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 0 0 5px DarkBlue;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .input-name-CSS {
+    border-right: none;
+  }
+
+  .input-name-CSS::placeholder {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  /* Section 2 */
+  .section2-CSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 20px;
+  }
+
+  .grid-CSS {
+    font-size: 35px;
+    display: grid;
+    line-height: 0%;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .grid-box-CSS {
+    justify-content: center;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3 {
+    width: 150px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 45px;
+    margin: auto;
+  }
+
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    width: 150px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 45px;
+    margin: auto;
+  }
+
+  #box-3-1,
+  #box-3-2,
+  #box-3-3 {
+    width: 150px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 45px;
+    margin: auto;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3,
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    border-right: none;
+  }
+
+  #box-1-1,
+  #box-2-1,
+  #box-3-1,
+  #box-1-2,
+  #box-2-2,
+  #box-3-2 {
+    border-bottom: none;
+  }
+
+  /* Section 3 */
+  .section3-CSS {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px;
+  }
+}
+
+
+
+/* =============== Tablet View =============== */
+@media only screen and (768px <= width <= 1023px) {
+  /* Container */
+  .container-CSS {
+    justify-content: center;
+    margin: 50px 0px 0px;
+  }
+
+  .title-CSS {
+    font-size: 40px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+  }
+
+  .result-CSS {
+    font-size: 25px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+    margin: 0px;
+  }
+
+  .new-reset-CSS {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-CSS,
+  .reset-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    color: MidnightBlue;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 3px 3px 5px DarkBlue;
+    padding: 5px;
+    margin: 0px 25px;
+  }
+
+  /* Section 1 */
+  .section1-CSS {
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+  .player-info-CSS {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  .input-name-CSS,
+  .start-button-CSS {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    color: Black;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 0 0 5px DarkBlue;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .input-name-CSS {
+    border-right: none;
+  }
+
+  .input-name-CSS::placeholder {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  /* Section 2 */
+  .section2-CSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 20px;
+  }
+
+  .grid-CSS {
+    font-size: 35px;
+    display: grid;
+    line-height: 0%;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .grid-box-CSS {
+    justify-content: center;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3 {
+    width: 170px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 50px;
+    margin: auto;
+  }
+
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    width: 170px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 50px;
+    margin: auto;
+  }
+
+  #box-3-1,
+  #box-3-2,
+  #box-3-3 {
+    width: 170px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 50px;
+    margin: auto;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3,
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    border-right: none;
+  }
+
+  #box-1-1,
+  #box-2-1,
+  #box-3-1,
+  #box-1-2,
+  #box-2-2,
+  #box-3-2 {
+    border-bottom: none;
+  }
+
+  /* Section 3 */
+  .section3-CSS {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px;
+  }
+}
+
+
+
+@media only screen and (1024px <= width <= 1120px) {
+  /* Container */
+  .container-CSS {
+    justify-content: center;
+    margin: 50px 0px 0px;
+  }
+
+  .title-CSS {
+    font-size: 50px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+  }
+
+  .result-CSS {
+    font-size: 30px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+    margin: 0px;
+  }
+
+  .new-reset-CSS {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-CSS,
+  .reset-CSS {
+    font-size: 25px;
+    font-weight: bold;
+    color: MidnightBlue;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 3px 3px 5px DarkBlue;
+    padding: 5px;
+    margin: 0px 25px;
+  }
+
+  /* Section 1 */
+  .section1-CSS {
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+  .player-info-CSS {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  .input-name-CSS,
+  .start-button-CSS {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    color: Black;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 0 0 5px DarkBlue;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .input-name-CSS {
+    border-right: none;
+  }
+
+  .input-name-CSS::placeholder {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  /* Section 2 */
+  .section2-CSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 20px;
+  }
+
+  .grid-CSS {
+    font-size: 75px;
+    display: grid;
+    line-height: 0%;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .grid-box-CSS {
+    justify-content: center;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3 {
+    width: 170px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 55px;
+    margin: auto;
+  }
+
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    width: 170px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 55px;
+    margin: auto;
+  }
+
+  #box-3-1,
+  #box-3-2,
+  #box-3-3 {
+    width: 170px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 55px;
+    margin: auto;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3,
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    border-right: none;
+  }
+
+  #box-1-1,
+  #box-2-1,
+  #box-3-1,
+  #box-1-2,
+  #box-2-2,
+  #box-3-2 {
+    border-bottom: none;
+  }
+
+  /* Section 2 */
+  .section3-CSS {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+}
+
+
+
+@media only screen and (1121px <= width <= 1910px) {
+  /* Container */
+  .container-CSS {
+    justify-content: center;
+    margin: 50px 0px 0px;
+  }
+
+  .title-CSS {
+    font-size: 50px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+  }
+
+  .result-CSS {
+    font-size: 30px;
+    color: Black;
+    text-shadow: 3px 3px 5px DarkBlue, 5px 5px 5px RoyalBlue;
+    margin: 0px;
+  }
+
+  .new-reset-CSS {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-CSS,
+  .reset-CSS {
+    font-size: 25px;
+    font-weight: bold;
+    color: MidnightBlue;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 3px 3px 5px DarkBlue;
+    padding: 5px;
+    margin: 0px 25px;
+  }
+
+  /* Section 1 */
+  .section1-CSS {
+    justify-content: center;
+    margin: 50px 0px;
+  }
+
+  .player-info-CSS {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  .input-name-CSS,
+  .start-button-CSS {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    color: Black;
+    background-color: LightCyan;
+    border: 5px solid MidnightBlue;
+    text-shadow: 0 0 5px DarkBlue;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .input-name-CSS {
+    border-right: none;
+  }
+
+  .input-name-CSS::placeholder {
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+  }
+
+  /* Section 2 */
+  .section2-CSS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 30px;
+  }
+
+  .grid-CSS {
+    font-size: 75px;
+    display: grid;
+    line-height: 0%;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .grid-box-CSS {
+    justify-content: center;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3 {
+    width: 170px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 55px;
+    margin: auto;
+  }
+
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    width: 170px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 55px;
+    margin: auto;
+  }
+
+  #box-3-1,
+  #box-3-2,
+  #box-3-3 {
+    width: 170px;
+    height: 100px;
+    display: grid;
+    color: Black;
+    text-shadow: 0 0 5px DarkBlue;
+    border-style: solid;
+    border-width: 5px;
+    border-color: MidnightBlue;
+    padding: 55px;
+    margin: auto;
+  }
+
+  #box-1-1,
+  #box-1-2,
+  #box-1-3,
+  #box-2-1,
+  #box-2-2,
+  #box-2-3 {
+    border-right: none;
+  }
+
+  #box-1-1,
+  #box-2-1,
+  #box-3-1,
+  #box-1-2,
+  #box-2-2,
+  #box-3-2 {
+    border-bottom: none;
+  }
+
+  /* Section 2 */
+  .section3-CSS {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 50px;
   }
 }
