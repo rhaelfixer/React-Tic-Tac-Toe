@@ -9,10 +9,10 @@ My personal React Tic Tac Toe project, where players can participate in matches.
 
 
 ## Key Features
-- **Players Name Change:** Players can create their names.
-- **New Game:** Starting a new game resets the score to 0 and allows players to set their names.
-- **Reset Game:** Reset the current match.
-- **Responsive Design:** Play the game seamlessly across various devices.
+- **Player Name Customization:** Players can enter custom names before starting a game.
+- **New Game:** Resets the score to zero and allows players to re-enter their names before starting a new match.
+- **Reset Game:** Restarts the current match without changing player names or scores.
+- **Responsive Design:** Experience seamless gameplay across all devices and screen sizes.
 
 
 ## Usage
